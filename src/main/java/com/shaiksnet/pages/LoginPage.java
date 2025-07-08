@@ -201,7 +201,18 @@ public class LoginPage {
 
 
     }
-    public class employee {
 
+    public void userLoginIntoFlowCv() {
+        try{
+
+
+        }catch(Exception e){
+            logger.error("Step: userLoginIntoFlowCv failed");
+            e.printStackTrace();
+            fail("Step: userLoginIntoFlowCv failed");
+
+        }
     }
+
+
 }
