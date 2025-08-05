@@ -7,8 +7,6 @@ import org.apache.logging.log4j.core.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import io.cucumber.datatable.DataTable;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -225,6 +223,7 @@ public class AccountDetailsPage {
                 chatExitButton.click();
             }
 
+
 //            WebElement homeButton = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"homeBtn")));
             Thread.sleep(1000);
 //            homeButton.click();
@@ -232,7 +231,6 @@ public class AccountDetailsPage {
             Thread.sleep(1000); // Wait for the home page to load
             driver.navigate().back();
              // Wait for the home page to load
-
 
             logger.info("In theuserapplyforjobsinnaukri completed");
 
