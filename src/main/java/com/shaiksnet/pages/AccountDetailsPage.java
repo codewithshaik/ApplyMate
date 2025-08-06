@@ -10,8 +10,8 @@ import io.cucumber.datatable.DataTable;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import java.io.File;
-import java.time.Duration;
 import java.util.*;
 
 public class AccountDetailsPage {
@@ -251,7 +251,7 @@ public class AccountDetailsPage {
             logger.info("In userMakeAVisitInGitAndLinkedIn started");
 
             List<String> urls = Arrays.asList(
-                    "https://github.com/Mrshaik-hub",
+                    "https://github.com/codewithshaik",
                     "linkedin", // trigger element click when this is found
                     "https://medium.com/@shaikmahaboobsubhani00"
             );
@@ -330,12 +330,6 @@ public class AccountDetailsPage {
             Assert.fail("SEO automation failed: " + e.getMessage());
         }
     }
-
-
-
-
-
-
 
 
 }
