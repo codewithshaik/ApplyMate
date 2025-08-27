@@ -176,6 +176,7 @@ public class AccountDetailsPage {
     public void theuserapplyforjobsinnaukri() {
         try{
             logger.info("In theuserapplyforjobsinnaukri started");
+            driver.navigate().refresh();
             Util.waitForPageToLoad(driver);
 
             Thread.sleep(2000); // Wait for the page to load

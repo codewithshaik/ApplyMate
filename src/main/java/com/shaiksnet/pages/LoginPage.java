@@ -134,9 +134,8 @@ public class LoginPage {
 
 
     public void userLoginIntonaukri( ) {
-        String currentTag = Util.getProperty("cucumber.filter.tags");
         try{
-            if (!currentTag.contains("Git")) {
+
                 logger.info("userLoginIntonaukri started");
                 String loginType = System.getProperty("loginType");
                 openUrl();
@@ -191,7 +190,7 @@ public class LoginPage {
                 }else {
                     System.out.println("user already logged in");
                 }
-            }
+
 
 
 
