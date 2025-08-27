@@ -67,8 +67,8 @@ public class AccountDetailsPage {
 //           naukriSkillInput.clear();
            String  skills = get245Chars();
           // naukriSkillInput.sendKeys(skills);
-              WebElement naukriSkillAddButton = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"naukriSkillSaveBtn")));
-            naukriSkillAddButton.click();
+//              WebElement naukriSkillAddButton = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"naukriSkillSaveBtn")));
+//            naukriSkillAddButton.click();
 
             //key skills update
             WebElement keySkill =  driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"keySkills")));
@@ -193,7 +193,7 @@ public class AccountDetailsPage {
             Collections.shuffle(shuffled);
 
             for (WebElement job : shuffled) {
-                if (count == 5) break;
+                if (count == 2) break;
 
                 try {
                     if (job.isDisplayed() && job.isEnabled()) {
