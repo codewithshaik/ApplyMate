@@ -55,18 +55,18 @@ public class AccountDetailsPage {
         return skills245 ;
     }
 
-    public  void theUserUpdateNaukriKeywords() {
+    public  void  theUserUpdateNaukriKeywords() {
         try {
               logger.info("In theUserUpdateNaukriKeywords started");
               WebElement viewProfile = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"viewProfile")));
               Thread.sleep(2000); // Wait for the element to be visible
               viewProfile.click();
-           WebElement naukriSkill =  driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"updateHeadLine")));
-           naukriSkill.click();
-           WebElement naukriSkillInput = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"skillInput")));
-           naukriSkillInput.clear();
+//           WebElement naukriSkill =  driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"updateHeadLine")));
+//           naukriSkill.click();
+//           WebElement naukriSkillInput = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"skillInput")));
+//           naukriSkillInput.clear();
            String  skills = get245Chars();
-           naukriSkillInput.sendKeys(skills);
+          // naukriSkillInput.sendKeys(skills);
               WebElement naukriSkillAddButton = driver.findElement(By.xpath(Util.getXpath(getClass().getSimpleName(),"naukriSkillSaveBtn")));
             naukriSkillAddButton.click();
 
