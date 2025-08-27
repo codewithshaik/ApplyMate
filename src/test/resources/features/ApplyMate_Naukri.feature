@@ -14,4 +14,3 @@ Feature: Naukri Apply mate
     And user uploads the resume to naukri profile
     Then the user should see the updated naukri profile
 
-
